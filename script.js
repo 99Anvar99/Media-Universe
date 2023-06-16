@@ -73,6 +73,7 @@ function createMovieElement(movie) {
   return movieDiv;
 }
 
+
 // Save movie to favorites in local storage
 function saveMovieToFavorites(movieTitle) {
   var favorites = localStorage.getItem("favorites") || "";
