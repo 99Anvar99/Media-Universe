@@ -4,7 +4,7 @@ var searchMusic = document.getElementById("searchMusic");
 var search = document.getElementById("search");
 
 var musicContainer= document.getElementById("musicContainer")
-var albumEl = document.getElementById("album");
+var albumEl = document.getElementById("album")
 var notFound= document.getElementById("not-found")
 var poster = document.querySelectorAll("poster");
 
@@ -60,24 +60,22 @@ async function searchMovies() {
                      var artistName = element.data.artists.items[0].profile.name;
                      var imgSrc = element.data.coverArt.sources[0].url;
                      var albumTitle = albumName.Title;
- 
+                      // Create a div for whole part
                      var albumDiv = document.createElement("div");
                      albumDiv.classList.add("album");
+                     // create a div for title
                      var title = document.createElement("h2");
                      title.textContent = albumName + "  :   "+  (artistName);
                      albumDiv.appendChild(title);
+                     // get images
                      var img = document.createElement("img");
                      img.alt = albumTitle;
                      img.src = imgSrc;
-                     albumDiv.appendChild(img);
+                     // Link to spotify
                      var linkElement = document.createElement("a");
-                     linkElement.textContent = "Link to Spotify";
-                     linkElement.href = element.data.uri;
+                    linkElement.href = element.data.uri;
+                    linkElement.appendChild(img);
                      albumDiv.appendChild(linkElement);
-                    
-                   
-                   console.log(linkElement.href);
-                   albumDiv.appendChild(linkElement);
            musicContainer.appendChild(albumDiv);
          }
                 
