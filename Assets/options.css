@@ -1,0 +1,24 @@
+/* option section */
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+  }
+  
+  h1, h2 {
+    font-weight: 700;
+  }
+
+h2 {
+    margin: 50px;
+    justify-content: center;
+}
+
+button {
+  padding: 10px;
+  justify-content: center;
+}
+
+#flex {
+  text-align: center;
+  margin-bottom: 20px;
+}
