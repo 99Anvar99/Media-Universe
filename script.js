@@ -1,5 +1,5 @@
 // declaring variables
-var searchbutton = document.getElementById("searchbutton");
+var searchbutton = document.getElementById("searchButton");
 
 // search movies
 async function searchMovies() {
