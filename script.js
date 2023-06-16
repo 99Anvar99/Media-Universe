@@ -44,7 +44,7 @@ async function searchMovies() {
  };
  function album(){
    musicContainer.innerHTML = "";
-     const url =  `https://spotify23.p.rapidapi.com/search/?q=%3C${search.value}%3E&type=multi&offset=0&limit=10&numberOfTopResults=5`;
+     const url =  `https://spotify23.p.rapidapi.com/search/?q=%3C${search.value}%3E&type=multi&offset=0&limit=9&numberOfTopResults=9`;
      fetch (url, options).then(function(response){
          if(response.ok){
              response.json()

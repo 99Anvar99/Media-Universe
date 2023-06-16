@@ -1,0 +1,90 @@
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: .5%;
+    color:whitesmoke;
+    font-size: 70px;
+    
+}
+body{
+    background-image: url("https://thumbs.dreamstime.com/b/studio-microphone-headphones-black-background-studio-microphone-headphones-black-background-online-podcast-230154539.jpg");
+background-size: 170%;
+background-repeat: no-repeat;
+
+
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+}
+form{
+    background: #fff;
+    width: 500px;
+    height: 45px;
+    display: flex;
+}
+ input{
+    padding: 10px 80px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+ button{
+    background-color: rgb(31, 129, 221);
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color:#fff;
+    font-size: 20px;
+
+}
+.fa-music{
+    padding:10px
+}
+#musicContainer{
+    
+    display: flex;
+    color:  #fff;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+   
+   
+   
+}
+button:hover{
+    background-color: blue;
+   
+    
+}
+
+.album{
+    display: flex;
+    width: 400px;
+   
+    flex-wrap: wrap;
+
+}
+  
+  
+  img {
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+
+    padding: 5px;
+    background-color: blacl;
+    color:white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 
+  }
+  #musicContainer img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s;
+
+  }
+ 
