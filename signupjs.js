@@ -16,7 +16,7 @@ function signup(event) {
 
     // Perform input validation
     if (password !== confirmPassword) {
-      errorText.innerHTML = "Passwords do not match.";
+      errorText.innerHTML = "Passwords do not match or exists.";
       return;
     }
 
