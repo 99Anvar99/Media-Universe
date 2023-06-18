@@ -79,7 +79,7 @@ function album() {
                             cardSongs.push(tableSongs[songIndex]);
                             localStorage.setItem(`cardSongsB`, JSON.stringify(cardSongs));
                             cardSongsOuterLenght=(cardSongs.length);
-                            likeBtnEl.style.color = "red";
+                           
                         }
 
                         document.addEventListener("click", tableSavedSongs);
