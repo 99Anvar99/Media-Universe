@@ -41,15 +41,16 @@ function album() {
                         title.textContent = albumName + "  :   " + (artistName);
                         albumDiv.appendChild(title);
                     
-                        var setDiv= document.createElement("div");
-                        var likeBtnEl = document.createElement("button");
-                        likeBtnEl.setAttribute("data-song-index",i);             
-                        var spanEl = document.createElement("span");
-                        spanEl.textContent = " Song " + i;
-                        likeBtnEl.textcontent= "❤️";
-                        heartSymbol="❤️";
-                        likeBtnEl.addEventListener('click', heartTouch);
-                        setDiv.append(likeBtnEl);
+                       
+                         // var setDiv= document.createElement("div");
+                         var likeBtnEl = document.createElement("i");
+                         // likeBtnEl.setAttribute("data-song-index",i);             
+                          //var spanEl = document.createElement("span");
+                          //spanEl.textContent = " Song " + i;
+                          likeBtnEl.classList.add("fa", "fa-heart");
+                          //heartSymbol="❤️";
+                          likeBtnEl.addEventListener('click', heartTouch);
+                          title.append(likeBtnEl);
                        
 
                         // get images
@@ -62,7 +63,7 @@ function album() {
                         linkElement.appendChild(img);
                         albumDiv.appendChild(linkElement);
                         musicContainer.appendChild(albumDiv);
-                        document.getElementById("musicContainer").appendChild(setDiv);
+                        //document.getElementById("musicContainer").appendChild(setDiv);
                         tableSongs.push(albumName);
                                         }
                         var extractChrome=localStorage.getItem(`cardSongsB`);
