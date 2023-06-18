@@ -25,7 +25,7 @@ function signup(event) {
     // Save password to local storage
     localStorage.setItem("password", password);
 
-    window.location.href = "login.html"; // Uncomment to redirect to another page after successful sign-up
+    window.location.href = "./index.html"; // Uncomment to redirect to another page after successful sign-up
 
   }
 
