@@ -6,7 +6,9 @@ var searchMusic = document.getElementById("searchMusic");
 var search = document.getElementById("search");
 
 var musicContainer = document.getElementById("musicContainer")
-var albumEl = document.getElementById("album");
+var albumEl = document.getElementById("album")
+var notFound = document.getElementById("not-found")
+var poster = document.querySelectorAll("poster");
 
 const options = {
     method: 'GET',
@@ -41,16 +43,15 @@ function album() {
                         title.textContent = albumName + "  :   " + (artistName);
                         albumDiv.appendChild(title);
                     
-                       
-                         // var setDiv= document.createElement("div");
-                         var likeBtnEl = document.createElement("i");
-                         // likeBtnEl.setAttribute("data-song-index",i);             
-                          //var spanEl = document.createElement("span");
-                          //spanEl.textContent = " Song " + i;
-                          likeBtnEl.classList.add("fa", "fa-heart");
-                          //heartSymbol="❤️";
-                          likeBtnEl.addEventListener('click', heartTouch);
-                          title.append(likeBtnEl);
+                        var setDiv= document.createElement("div");
+                        var likeBtnEl = document.createElement("button");
+                        likeBtnEl.setAttribute("data-song-index",i);             
+                        var spanEl = document.createElement("span");
+                        spanEl.textContent = " Song " + i;
+                        likeBtnEl.textcontent= "❤️";
+                        heartSymbol="❤️";
+                        likeBtnEl.addEventListener('click', heartTouch);
+                        setDiv.append(likeBtnEl);
                        
 
                         // get images
@@ -67,28 +68,28 @@ function album() {
                         tableSongs.push(albumName);
                                         }
                         var extractChrome=localStorage.getItem(`cardSongsB`);
-                        var arrayChrome=JSON.parse(extractChrome); 
-                            
+                        var arrayChrome=JSON.parse(extractChrome);
+
                         if (arrayChrome!=null ) {
                         for (var k=0; k<arrayChrome.length; k++) {
                         cardSongs.push(arrayChrome[k]);
                         }
                         }
-                        
-                    
+
+
                         function heartTouch(event) {
-                            var songIndex = event.target.getAttribute("data-song-index"); 
+                            var songIndex = event.target.getAttribute("data-song-index");
                             localStorage.setItem(`storeSongs`, albumName);
                             localStorage.setItem(`songIndex`, songIndex);
-                            cardSongs.push(tableSongs[songIndex]);    
+                            cardSongs.push(tableSongs[songIndex]);
                             localStorage.setItem(`cardSongsB`, JSON.stringify(cardSongs));
                             cardSongsOuterLenght=(cardSongs.length);
-                        }  
-                        
+                        }
+
                         document.addEventListener("click", tableSavedSongs);
                         function tableSavedSongs() {
                         document.getElementById("demo").innerHTML = "SAVED songs:";
-                        for (let j=0; j<cardSongs.length; j++) { 
+                        for (let j=0; j<cardSongs.length; j++) {
                             var listCardSongs=document.createElement("p");
                             listCardSongs.innerHTML=cardSongs[j];
                             document.getElementById("demo").appendChild(listCardSongs);
