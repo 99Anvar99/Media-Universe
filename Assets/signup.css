@@ -86,7 +86,7 @@ body {
     text-decoration: underline;
   }
 
-  #btn
+  #signupButton
   {
     background-color: #40ad24;
     color: white;
@@ -96,4 +96,18 @@ body {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease;
+  }
+
+  #signupButton:hover {
+    background-color: #5acc3e;
+  }
+
+  #errorInfo
+  {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
   }

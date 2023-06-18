@@ -14,21 +14,23 @@
   <div class="signupbox">
     <img src="./Assets/images/avatar.png" class="avatar">
     <h1>Sign Up</h1>
+    <p id="errorInfo"></p>
     <form>
       <p>Create Username</p>
-      <input type="text" name="" placeholder="Enter Username">
+      <input id ="username" type="text" name="" placeholder="Enter Username">
       <p>Create Password</p>
-      <input type="password" name="" placeholder="Enter Password"><br>
+      <input id="password" type="password" name="" placeholder="Enter Password"><br>
       <p>Confirm Password</p>
-      <input type="password" name="" placeholder="Confirm Password"><br>
-      <input id="btn" type="submit" name="" value="Create Account"><br>
+      <input id ="confirmPassword" type="password" name="" placeholder="Confirm Password"><br>
+      <button onclick="signup" id="signupButton">Create Account</button>
       <div class="container signin">
-        <p>Already have an account? <a href="#">Sign in</a>.</p>
+        <p>Already have an account? <a href="#">Login</a>.</p>
       </div>
 
     </form>
   </div>
 
+  <script src="signupjs.js"></script>
 </body>
 
 </html>
