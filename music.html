@@ -2,6 +2,9 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Music Browser</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="./Assets/music.css">
@@ -14,8 +17,8 @@
       </div>
       <div class="music-container" id="musicContainer">
       </div>
-      <p id="demo"> Click to see saved songs</p>
       <div class="not-found" id="notFound" style="display: none;">Music not found!</div>
+      <p id="demo" class="totalSongs"> </p>
       <script src="./music.js"></script>
       <!-- script for music, seperated because they are in different files and 1 script cant load in 2 files -->
   </body>

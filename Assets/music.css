@@ -88,3 +88,11 @@ button:hover{
 
   }
  
+.totalSongs {
+ display: flex;
+    color:  #88f012;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+ }

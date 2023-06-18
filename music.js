@@ -43,16 +43,13 @@ function album() {
                         title.textContent = albumName + "  :   " + artistName + likeBtnEl;
                         albumDiv.appendChild(title);
 
-                        // var setDiv= document.createElement("div");
-                        var likeBtnEl = document.createElement("i");
-                       // likeBtnEl.setAttribute("data-song-index",i);             
-                        //var spanEl = document.createElement("span");
-                        //spanEl.textContent = " Song " + i;
+                        
+                        var likeBtnEl = document.createElement("div");
+                        likeBtnEl.setAttribute("data-song-index",i);             
                         likeBtnEl.classList.add("fa", "fa-heart");
-                        //heartSymbol="❤️";
                         likeBtnEl.addEventListener('click', heartTouch);
                         title.append(likeBtnEl);
-
+                        
 
 
                         // get images
@@ -65,7 +62,6 @@ function album() {
                         linkElement.appendChild(img);
                         albumDiv.appendChild(linkElement);
                         musicContainer.appendChild(albumDiv);
-                       // document.getElementById("musicContainer").appendChild(setDiv);
                         tableSongs.push(albumName);
                                         }
                         var extractChrome=localStorage.getItem(`cardSongsB`);
@@ -80,18 +76,17 @@ function album() {
 
                         function heartTouch(event) {
                             var songIndex = event.target.getAttribute("data-song-index");
-                            localStorage.setItem(`storeSongs`, albumName);
-                            localStorage.setItem(`songIndex`, songIndex);
                             cardSongs.push(tableSongs[songIndex]);
                             localStorage.setItem(`cardSongsB`, JSON.stringify(cardSongs));
                             cardSongsOuterLenght=(cardSongs.length);
+                            likeBtnEl.style.color = "red";
                         }
 
                         document.addEventListener("click", tableSavedSongs);
                         function tableSavedSongs() {
                         document.getElementById("demo").innerHTML = "SAVED songs:";
                         for (let j=0; j<cardSongs.length; j++) {
-                            var listCardSongs=document.createElement("p");
+                            var listCardSongs=document.createElement("ul");
                             listCardSongs.innerHTML=cardSongs[j];
                             document.getElementById("demo").appendChild(listCardSongs);
                         }
