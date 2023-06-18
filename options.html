@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,200&display=swap"
         rel="stylesheet"/>
 
-    <link rel="stylesheet" href="./Assets/css/option.css"/>
+    <link rel="stylesheet" href="./Assets/options.css"/>
 
     <title>Media Universe</title>
 </head>
@@ -28,11 +28,21 @@
         <div class="row justify-content-center">
             <div class="col-12 col-sm-10 col-md-6" id="flex">
                 <h2>Browse by:</h2>
-                <button class="btn btn-outline-primary me-4" href="#">Movies</button>
-                <button class="btn btn-outline-primary" href="#">Music</button>
+                <button id = "moviesBtn">Movies</button>
+                <button id = "musicBtn">Music</button>
             </div>
         </div>
     </div>
+    <script>
+        const moviesBtn = document.getElementById('moviesBtn');
+        const musicBtn = document.getElementById('musicBtn');
+        moviesBtn.addEventListener("click", function(){
+            window.location.href = "index.html";
+        })
+        musicBtn.addEventListener("click", function(){
+            window.location.href = "music.html";
+        })
+    </script>
 </body>
 
 </html>
