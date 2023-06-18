@@ -18,11 +18,11 @@ errorInfo.innerHTML = "Please fill in all fields.";
 return;
 }
 if (username !== storedUsername) {
-errorInfo.innerHTML = "Username does not match.";
+errorInfo.innerHTML = "Username does not match or exists.";
 return;
 }
 if (password !== storedPassword) {
-errorInfo.innerHTML = "Password does not match.";
+errorInfo.innerHTML = "Password does not match or exists.";
 return;
 }
 

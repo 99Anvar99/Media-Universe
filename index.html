@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Media Browser</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-  <link rel="stylesheet" href="./Assets/style.css">
+  <title>Media Universe-Movies and Music at your fingertips</title>
+  <link rel="stylesheet" type="text/css" href="./Assets/login.css">
 </head>
+
 <body>
-  <p id="subtitleText">Search for a movie below!</p>
-  <div class="search-container">
-    <input type="text" id="search" placeholder="Search for a movie...">
-    <button onclick="searchMovies" id="searchButton">Search</button>
+  <header>
+    <h1>Media Universe</h1>
+  </header>
+  <!-- login screen -->
+  <div class="loginbox">
+    <img src="./Assets/images/avatar.png" class="avatar">
+    <h1>Login</h1>
+    <p id="errorLoginInfo"></p>
+    <form>
+      <p>Username</p>
+      <input id="username" type="text" name="" placeholder="Enter Username">
+      <p>Password</p>
+      <input id="password" type="password" name="" placeholder="Enter Password"><br>
+      <button onclick="login" id="loginButton">Login</button>
+      <div class="container login">
+      <a href="./signup.html">Don't have an account? Sign up here!</a>
+      </div>
+    </form>
   </div>
-  <div class="movie-container" id="movieContainer">
-    <!-- Movies will be dynamically added here -->
-  </div>
-  <div class="not-found" id="notFound" style="display: none;">Movie not found!</div>
-  <script src="script.js"></script>
+  <script src="login.js"></script>
+
 </body>
+
 </html>

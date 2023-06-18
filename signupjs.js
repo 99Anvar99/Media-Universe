@@ -16,7 +16,7 @@ function signup(event) {
 
     // Perform input validation
     if (password !== confirmPassword) {
-      errorText.innerHTML = "Passwords do not match.";
+      errorText.innerHTML = "Passwords do not match or exists.";
       return;
     }
 
@@ -25,7 +25,7 @@ function signup(event) {
     // Save password to local storage
     localStorage.setItem("password", password);
 
-    window.location.href = "login.html"; // Uncomment to redirect to another page after successful sign-up
+    window.location.href = "./options.html"; // Uncomment to redirect to another page after successful sign-up
 
   }
 
