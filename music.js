@@ -6,9 +6,7 @@ var searchMusic = document.getElementById("searchMusic");
 var search = document.getElementById("search");
 
 var musicContainer = document.getElementById("musicContainer")
-var albumEl = document.getElementById("album")
-var notFound = document.getElementById("not-found")
-var poster = document.querySelectorAll("poster");
+var albumEl = document.getElementById("album");
 
 const options = {
     method: 'GET',
@@ -52,10 +50,7 @@ function album() {
                         heartSymbol="❤️";
                         likeBtnEl.addEventListener('click', heartTouch);
                         setDiv.append(likeBtnEl);
-                        var linkElement = document.createElement("a");
-                        linkElement.textContent = "Link to Spotify";
-                        linkElement.href = element.data.uri;
-                        albumDiv.appendChild(linkElement);
+                       
 
                         // get images
                         var img = document.createElement("img");
