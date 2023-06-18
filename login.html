@@ -3,7 +3,7 @@
 
 <head>
   <title>Media Universe-Movies and Music at your fingertips</title>
-  <link rel="stylesheet" type="text/css" href="./Assets/css/login.css">
+  <link rel="stylesheet" type="text/css" href="./Assets/login.css">
 </head>
 
 <body>
@@ -14,14 +14,17 @@
   <div class="loginbox">
     <img src="./Assets/images/avatar.png" class="avatar">
     <h1>Login</h1>
+    <p id="errorInfo"></p>
     <form>
       <p>Username</p>
       <input type="text" name="" placeholder="Enter Username">
       <p>Password</p>
       <input type="password" name="" placeholder="Enter Password"><br>
-      <input type="submit" name="" value="Login"><br>
+      <button onclick="login" id="loginButton">Login</button>
+      <div class="container login">
       <a href="#">Forgot password?</a><br>
       <a href="#">Don't have an account? Sign up here!</a>
+      </div>
     </form>
   </div>
 
