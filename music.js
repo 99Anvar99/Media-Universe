@@ -40,19 +40,20 @@ function album() {
                         albumDiv.classList.add("album");
                         // create a div for title
                         var title = document.createElement("h2");
-                        title.textContent = albumName + "  :   " + (artistName);
+                        title.textContent = albumName + "  :   " + artistName + likeBtnEl;
                         albumDiv.appendChild(title);
-                    
-                        var setDiv= document.createElement("div");
-                        var likeBtnEl = document.createElement("button");
-                        likeBtnEl.setAttribute("data-song-index",i);             
-                        var spanEl = document.createElement("span");
-                        spanEl.textContent = " Song " + i;
-                        likeBtnEl.textcontent= "❤️";
-                        heartSymbol="❤️";
+
+                        // var setDiv= document.createElement("div");
+                        var likeBtnEl = document.createElement("i");
+                       // likeBtnEl.setAttribute("data-song-index",i);             
+                        //var spanEl = document.createElement("span");
+                        //spanEl.textContent = " Song " + i;
+                        likeBtnEl.classList.add("fa", "fa-heart");
+                        //heartSymbol="❤️";
                         likeBtnEl.addEventListener('click', heartTouch);
-                        setDiv.append(likeBtnEl);
-                       
+                        title.append(likeBtnEl);
+
+
 
                         // get images
                         var img = document.createElement("img");
@@ -64,7 +65,7 @@ function album() {
                         linkElement.appendChild(img);
                         albumDiv.appendChild(linkElement);
                         musicContainer.appendChild(albumDiv);
-                        //document.getElementById("musicContainer").appendChild(setDiv);
+                       // document.getElementById("musicContainer").appendChild(setDiv);
                         tableSongs.push(albumName);
                                         }
                         var extractChrome=localStorage.getItem(`cardSongsB`);
