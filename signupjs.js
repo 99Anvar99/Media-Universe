@@ -1,6 +1,5 @@
 var btn = document.getElementById("signupButton");
 var errorText = document.getElementById("errorInfo");
-
 function signup(event) {
     event.preventDefault(); // Prevent form submission
 
@@ -15,6 +14,7 @@ function signup(event) {
       return;
     }
 
+    // Perform input validation
     if (password !== confirmPassword) {
       errorText.innerHTML = "Passwords do not match.";
       return;
@@ -29,5 +29,4 @@ function signup(event) {
 
   }
 
-  // Add event listener to form
   btn.addEventListener("click", signup);
