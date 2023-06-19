@@ -8,8 +8,9 @@ In the movies browser, users can search for any movie by entering its name. The 
 
 In the music browser, users can also search for albums, artists, or songs by entering their names. The browser will display the top nine options related to the search, along with their images and titles. Clicking on any image in the browser will redirect users to the Spotify page for that particular item, where they can actually play the song. If users want to add a song to their favorite list, they can click on the heart icon.
 
- ## TEAM
- Hung , Anvar, Adam , Kiran (HAAKERS)
+ ## TEAM MEMBERS
+ Hung , Anvar, Adam , Kiran
+ Team name: (HAAKERS)
 
  ## SCREENSHOTS
  [!Login page](https://github.com/99Anvar99/Media-Universe/blob/main/Assets/Images/Screenshot%20(26).png)
