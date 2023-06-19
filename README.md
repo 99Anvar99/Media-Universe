@@ -18,7 +18,10 @@ In movies browser user can search for any movie by entering their name, it will 
  [!Signup page](https://github.com/99Anvar99/Media-Universe/blob/main/Assets/Images/Screenshot%20(27).png)
  [!Options page](https://github.com/99Anvar99/Media-Universe/blob/main/Assets/Images/Screenshot%20(28).png)
  [!Movies Browser](https://github.com/99Anvar99/Media-Universe/blob/main/Assets/Images/Screenshot%20(29).png)
- [!Music Browser](
+ [!Music Browser](https://github.com/99Anvar99/Media-Universe/blob/main/Assets/Images/Screenshot%20(30).png)
 
  ## Links
+
+ REPOSITRY LINK - 
+ DEPLOYED LINK -
 
