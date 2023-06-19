@@ -15,7 +15,7 @@ In movies browser user can search for any movie by entering their name, it will 
 
  ## SCREENSHOTS
  [!Login page](https://github.com/99Anvar99/Media-Universe/blob/main/Assets/Images/Screenshot%20(26).png)
- [!Signup page](
+ [!Signup page](https://github.com/99Anvar99/Media-Universe/blob/main/Assets/Images/Screenshot%20(27).png)
  [!Options page](
  [!Movies Browser](
  [!Music Browser](
