@@ -1,5 +1,4 @@
 # MEDIA-UNIVERSE
-Media-Universe
 
 ## DESCRIPTION
 Creted a web browser with the help of OMDB API  for movies and Spotify API for music.To open a web Browser , if user already have a loginid they can login on LoginPage
