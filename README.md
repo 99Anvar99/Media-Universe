@@ -1,14 +1,12 @@
 # MEDIA-UNIVERSE
 
 ## DESCRIPTION
-Creted a web browser with the help of OMDB API  for movies and Spotify API for music.To open a web Browser , if user already have a loginid they can login on LoginPage
-Otherwise user user will be redirected to Signup page to create a account. After creating a account user can browse the categories OF movies and music as per their choice.
+developed a web browser using the OMDB API for movies and the Spotify API for music. When opening the web browser, users can log in on the LoginPage if they already have a login ID. Otherwise, they will be redirected to the Signup page to create an account. Once the account is created, users can browse through different categories of movies and music according to their preferences.
 
 ## USAGE
-In movies browser user can search for any movie by entering their name, it will display various options of movies with image and title, After clicking on title user will be redurected to google browser of that movie where they can see movies cast , roles and so on. If user want to add any movie in their favourite list they can do it by clicking on heart icon and it will turn red, similarly can remove it by clicking on it and then it turns black.
+In the movies browser, users can search for any movie by entering its name. The browser will display various options of movies with their images and titles. When users click on a title, they will be redirected to the Google browser for that movie, where they can find information about the movie's cast, roles, and more. If users wish to add a movie to their favorite list, they can do so by clicking on the heart icon, which will turn red. Similarly, they can remove a movie from their favorites by clicking on the heart icon again, causing it to turn black.
 
- In music browser also user can search anything by entering Album name, Artist name, Song name, it will display top 9 options related to that with image and title.
- if your click on any image in browser it will redirect to Spotify page of that particular page where they can actually play a song.If user wants to add any song in their favourite list they can do it by clicking on heart icon.
+In the music browser, users can also search for albums, artists, or songs by entering their names. The browser will display the top nine options related to the search, along with their images and titles. Clicking on any image in the browser will redirect users to the Spotify page for that particular item, where they can actually play the song. If users want to add a song to their favorite list, they can click on the heart icon.
 
  ## TEAM
  Hung , Anvar, Adam , Kiran (HAAKERS)
@@ -27,5 +25,5 @@ In movies browser user can search for any movie by entering their name, it will 
  ## Links
 
  REPOSITRY LINK - https://github.com/99Anvar99/Media-Universe
- DEPLOYED LINK -
+ DEPLOYED LINK - https://99anvar99.github.io/Media-Universe/
 
