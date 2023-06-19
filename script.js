@@ -4,7 +4,7 @@ var searchbutton = document.getElementById("searchButton");
 async function searchMovies() {
   var input = document.getElementById("search").value;
   var apiKey = "f8e8a149"; //OMDB API key
-  var url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${encodeURIComponent(input)}`;
+  var url = `https://www.omdbapi.com/?apikey=${apiKey}&s=${encodeURIComponent(input)}`;
   try {
     var response = await fetch(url);
     var data = await response.json();
