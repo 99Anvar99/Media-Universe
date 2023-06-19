@@ -4,12 +4,8 @@ var cardSongs=[];
 var cardSongsOuterLenght=0;
 var searchMusic = document.getElementById("searchMusic");
 var search = document.getElementById("search");
-
 var musicContainer = document.getElementById("musicContainer")
 var albumEl = document.getElementById("album")
-var notFound = document.getElementById("not-found")
-var poster = document.querySelectorAll("poster");
-
 const options = {
     method: 'GET',
     headers: {
@@ -63,7 +59,9 @@ function album() {
                         albumDiv.appendChild(linkElement);
                         musicContainer.appendChild(albumDiv);
                         tableSongs.push(albumName);
-                                        }
+                    }
+
+
                         var extractChrome=localStorage.getItem(`cardSongsB`);
                         var arrayChrome=JSON.parse(extractChrome);
 
