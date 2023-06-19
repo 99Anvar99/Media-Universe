@@ -14,6 +14,11 @@ In movies browser user can search for any movie by entering their name, it will 
  Hung , Anvar, Adam , Kiran (HAAKERS)
 
  ## SCREENSHOTS
+ [!Login page](https://github.com/99Anvar99/Media-Universe/blob/main/Assets/Images/Screenshot%20(26).png)
+ [!Signup page](
+ [!Options page](
+ [!Movies Browser](
+ [!Music Browser](
 
  ## Links
 
