@@ -16,11 +16,11 @@ In the music browser, users can also search for albums, artists, or songs by ent
  - Team name: (HAAKERS)
 
  ## SCREENSHOTS
- - [!Login page](https://github.com/99Anvar99/Media-Universe/blob/main/Assets/Images/Screenshot%20(26).png)
- - [!Signup page](https://github.com/99Anvar99/Media-Universe/blob/main/Assets/Images/Screenshot%20(27).png)
- - [!Options page](https://github.com/99Anvar99/Media-Universe/blob/main/Assets/Images/Screenshot%20(28).png)
- - [!Movies Browser](https://github.com/99Anvar99/Media-Universe/blob/main/Assets/Images/Screenshot%20(29).png)
- - [!Music Browser](https://github.com/99Anvar99/Media-Universe/blob/main/Assets/Images/Screenshot%20(30).png)
+  ![Login page](https://github.com/99Anvar99/Media-Universe/blob/main/Assets/Images/Screenshot%20(26).png)
+  ![Signup page](https://github.com/99Anvar99/Media-Universe/blob/main/Assets/Images/Screenshot%20(27).png)
+   ![Options page](https://github.com/99Anvar99/Media-Universe/blob/main/Assets/Images/Screenshot%20(28).png)
+ ![Movies Browser](https://github.com/99Anvar99/Media-Universe/blob/main/Assets/Images/Screenshot%20(29).png)
+  ![Music Browser](https://github.com/99Anvar99/Media-Universe/blob/main/Assets/Images/Screenshot%20(30).png)
  
  ## Links
 
